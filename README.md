@@ -2,7 +2,6 @@
 
 Este ecommerce es un proyecto realizado a partir de los conceptos recorridos en el curso React de Coderhouse.
 
-<< insertar captura de pantalla aqui >>
 ![image](/public/img/app.jpg)
 
 ## Instalacion del proyecto

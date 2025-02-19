@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-import ItemCount from "./ItemCount"
+// import ItemCount from "./ItemCount"
 import ItemList from "./ItemList"
 
 import CenteredComponent from "./CenteredComponent"
@@ -17,7 +17,6 @@ const ItemListContainer = (props) => {
     const [loader, setLoader] = useState(false);
     const { categoryId } = useParams()
     
-
 
     //PROMISE Firebase
     useEffect(() => {
@@ -51,7 +50,6 @@ const ItemListContainer = (props) => {
                     ? <LoaderComponent />
                     :
                     <div>
-                        
                         <h1>{greeting} {categoryId && <span style={{ color: "aquamarine" }}>{categoryId}</span>}</h1>
                         <ItemList productsList={productsList} />
                     </div>

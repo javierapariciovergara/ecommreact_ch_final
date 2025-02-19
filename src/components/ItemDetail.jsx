@@ -25,15 +25,13 @@ const ItemDetail = ({ item }) => {
 
   const onAdd = (cantidad) => {
     setPurchase(true)
-    //alert(`Agregaste ${cantidad} al carrito`)
+    //alert(`Agregaste ${cantidad} al carrito`) // Alert opcional para no usar el toast
     Toast.fire({
       icon: "success",
       title: "Agregaste el producto al carrito correctamente"
     })
     addItem(item, cantidad)
   }
-
-  // console.log(cart, 'carrito')
 
   const stockActualizado = item.stock - itemQuantity(item.id)
 

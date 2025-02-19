@@ -10,7 +10,6 @@ const CheckoutUseForm = () => {
     const { register, handleSubmit, formState: { errors }, getValues } = useForm()
     const { cart, cartTotal, clear } = useContext(CartContext)
     const [orderId, setOrderId] = useState('')
-    // console.log(errors.name.type, "errors")
 
     const onSubmit = (dataDelForm) => {
         //Cuando pasa las validaciones del hook
@@ -34,7 +33,6 @@ const CheckoutUseForm = () => {
                 clear()
             })
             .catch((error) => console.log(error))
-        //console.log(dataDelForm)
     }
 
     return (
