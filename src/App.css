@@ -1,0 +1,47 @@
+body{
+  background-color: antiquewhite;
+}
+
+/* Estilos para Navbar CSS Puro */
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color:  #199eb6;
+}
+
+/* logo-nav aplica tanto a CSS Puro como a
+navbar con Bootstrap */
+.logo-nav{
+  width:6rem;
+}
+
+.cat-nav{
+  color:azure;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.cartWidget{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-img{
+  width:2.5rem;
+}
+
+.cart-counter{
+  color: blueviolet;
+  font-weight: 800;
+}
+
+.list-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+  background-color: beige;
+}
